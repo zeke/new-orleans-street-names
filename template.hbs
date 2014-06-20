@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>New Orleans Street Names</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <section>
+      <h1>New Orleans Street Names</h1>
+
+      <ul>
+        {{#each names}}
+          <li>
+            <a href="https://maps.google.com/maps?q={{this}},+New+Orleans,+LA&hl=en&sll=37.7577,-122.4376&sspn=0.34852,0.7481&oq=beauvoir,+new+orleans&hnear=Beauvoir+Ct,+New+Orleans,+Louisiana+70128&t=m&z=17">{{this}}</a></li>
+        {{/each}}
+      </ul>
+
+      <footer>
+      Data from the <a href="http://nutrias.org/facts/streetnames/namesa.htm">New Orleans Public Library</a>, collected with <a href="http://www.kimonolabs.com/">Kimono</a>, sourced on <a href="https://github.com/zeke/new-orleans-street-names">GitHub</a>, hosted on <a href="http://heroku.com">Heroku</a>.
+      </footer>
+
+    </section>
+  </body>
+</html>
